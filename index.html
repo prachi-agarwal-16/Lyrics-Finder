@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Lirycs</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../public/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../public/favicon/favicon-16x16.png" />
+  </head>
+  <body>
+    <h1>Search your musics</h1>
+    <article>
+      <div class="content">
+        <label for="song">Song</label>
+        <input
+          type="text"
+          class="input_user song"
+          id="song"
+          placeholder="Ex: Yellow"
+        />
+
+        <label for="artist">Artist</label>
+        <input
+          type="text"
+          class="input_user artist"
+          id="artist"
+          placeholder="Ex: Cold Play"
+        />
+
+        <button
+          type="button"
+          class="input_user btn"
+          id="search"
+          onclick="doSubmit()"
+        >
+          Search
+        </button>
+        <!-- 
+        <input
+          class="input_user refresh btn"
+          type="button"
+          value="Refresh Button"
+          onClick="window.location.reload()"
+        /> -->
+      </div>
+    </article>
+    <main>
+      <div class="lyric">
+        <div class="title_music"></div>
+        <div class="response"></div>
+      </div>
+    </main>
+    <footer>
+      <div class="social">
+        <p>
+          <a href="https://twitter.com/gustavonobreza" target="_blank"
+            ><img
+              class="social__svg twitter"
+              alt="Gustavo Alexandre | Twitter"
+              width="22px"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/gustavo-a-n-mesquita/"
+            target="_blank"
+            ><img
+              class="social__svg linkedIn"
+              alt="Gustavo Alexandre | LinkedIn"
+              width="22px"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg"
+          /></a>
+          <a href="http://www.instagram.com/gustavonobreza" target="_blank"
+            ><img
+              class="social__svg instagram"
+              alt="Gustavo Alexandre | Instagram"
+              width="22px"
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg"
+          /></a>
+        </p>
+      </div>
+    </footer>
+    <script src="script/index.js"></script>
+  </body>
+</html>
